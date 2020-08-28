@@ -1,0 +1,18 @@
+20:40:55 **** Rebuild of configuration Debug for project Ejercicio 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 1.o" "..\\src\\Ejercicio 1.c" 
+gcc -o "Ejercicio 1.exe" "src\\Ejercicio 1.o" 
+20:41:26 **** Incremental Build of configuration Debug for project Ejercicio 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 1.o" "..\\src\\Ejercicio 1.c" 
+..\src\Ejercicio 1.c: In function 'main':
+..\src\Ejercicio 1.c:31:4: error: 'acumulador' undeclared (first use in this function)
+   31 |    acumulador = acumulador + numero;
+      |    ^~~~~~~~~~
+..\src\Ejercicio 1.c:31:4: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Ejercicio 1.c:37:1: error: expected declaration or statement at end of input
+   37 | }
+      | ^
+..\src\Ejercicio 1.c:25:8: warning: variable 'promedio' set but not used [-Wunused-but-set-variable]
+   25 |  float promedio;
+      |        ^~~~~~~~

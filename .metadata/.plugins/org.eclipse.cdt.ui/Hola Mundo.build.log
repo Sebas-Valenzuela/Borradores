@@ -1,0 +1,14 @@
+21:25:50 **** Incremental Build of configuration Debug for project Hola Mundo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Hola Mundo.o" "..\\src\\Hola Mundo.c" 
+..\src\Hola Mundo.c: In function 'main':
+..\src\Hola Mundo.c:36:10: warning: implicit declaration of function '__fpurge' [-Wimplicit-function-declaration]
+   36 |          __fpurge(stdin); // fflush(stdin)
+      |          ^~~~~~~~
+gcc -o "Hola Mundo.exe" "src\\Hola Mundo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Hola Mundo.o: in function `main':
+C:\Users\COVID-19\eclipse-workspace\Hola Mundo\Debug/../src/Hola Mundo.c:36: undefined reference to `__fpurge'
+collect2.exe: error: ld returned 1 exit status
+
+21:25:56 Build Failed. 2 errors, 1 warnings. (took 5s.646ms)
+
